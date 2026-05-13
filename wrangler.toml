@@ -1,4 +1,4 @@
-name = "win32-run-cf"
+name = "win32"
 main = ".svelte-kit/cloudflare/_worker.js"
 compatibility_date = "2025-04-01"
 compatibility_flags = ["nodejs_compat"]
