@@ -67,6 +67,15 @@ The easiest way is directly through the Cloudflare dashboard — no CLI needed:
 
 Cloudflare will build and deploy on every push to your main branch from that point on.
 
+For manual CLI deploys, build the app and deploy the generated Pages output:
+
+```bash
+npm run build
+npm run deploy
+```
+
+Do not use `wrangler deploy` for this project. That command deploys a standalone Worker, while this site is configured as a Cloudflare Pages project whose output directory is `.svelte-kit/cloudflare`.
+
 ---
 
 ## Documentation
